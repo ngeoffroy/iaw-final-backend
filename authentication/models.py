@@ -4,7 +4,7 @@ from django.contrib.auth.models import AbstractUser
 # Create your models here.
 
 """
-@author ngeoffroy
+@author ngeoffroy 
 Creo el modelo base de la aplicación
 Utilizo el campo mail para la identificación del usuario
 """

@@ -2,7 +2,7 @@ from django.urls import path, include
 from .views import LoginView, LogoutView, CreateNewUserView
 """
 @author ngeoffroy
-Archivo para guardar las urls del módulo de authentication
+Archivo para guardar las urls del módulo de authentication 
 """
 
 urlpatterns = [

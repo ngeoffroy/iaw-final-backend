@@ -11,7 +11,7 @@ from django_rest_passwordreset.signals import reset_password_token_created
 
 """
 @author ngeoffroy
-Vista que captura los parámetros necesarios para el inicio de sesión
+Vista que captura los parámetros necesarios para el inicio de sesión 
 """
 
 class LoginView(APIView):

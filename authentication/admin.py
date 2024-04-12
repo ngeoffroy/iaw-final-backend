@@ -10,7 +10,7 @@ from denuncias.models import Denuncia
 
 """
 @author ngeoffroy
-Activo la gestión de usuarios desde el panel de administración
+Activo la gestión de usuarios desde el panel de administración.
 """
 @admin.register(get_user_model())
 class CustomUserAdmin(UserAdmin):

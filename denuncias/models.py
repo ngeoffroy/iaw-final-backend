@@ -6,7 +6,7 @@ from django.db import models
 @author ngeoffroy
 Creo el modelo base de las denuncias
 Fields: 
-    * id como llave primaria para buscar las denuncias
+    * id como llave primaria para buscar las denunciass
     * título de la denuncia
     * descripción en caso de querer agregar algún "contexto"
     * imagen de la denuncia a analizar

@@ -4,7 +4,7 @@ from django.contrib.auth.hashers import make_password
 #importo un generador de psw
 
 """
-@author ngeoffroy
+@author ngeoffroy 
 Serializo el modelo de user
 """
 

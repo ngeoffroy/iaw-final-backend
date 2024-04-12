@@ -8,17 +8,13 @@ from denuncias import views
 # Api router
 router = routers.DefaultRouter()
 router.register('denuncias', views.DenunciaViewSet, basename='denuncias')
-router.register('aprobadas', views.DenunciasAprobadasViewSet, basename='aprobadas')
-router.register('pendientes', views.DenunciasPendientesViewSet, basename='pendientes')
-router.register('revision', views.DenunciasEnRevisionViewSet, basename='revision')
-router.register('terminadas', views.DenunciasTerminadasViewSet, basename='terminadas')
+router.register('changestatus', views.ChangeStatusViewSet, basename='changestatus')
+router.register('changeautorizado', views.ChangeAutorizadoViewSet, basename='changeautorizado')
 
 urlpatterns = [
     # Admin routes
     path('admin/', admin.site.urls),
-
-    # Api routes
-    path('', include('authentication.urls')),
+    path('auth/', include('authentication.urls')),
     path('', include(router.urls)),
 ]
 
