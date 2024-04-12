@@ -43,10 +43,10 @@ class DenunciaViewSet(viewsets.ViewSet):
             texto = self.extraer_texto(imagen)
             rtdo, pena = self.analizar_texto(texto)
             if rtdo:
-                serializer.validated_data['status'] = 2
+                serializer.validated_data['status'] = 2 # Lo pasa a estado terminado (existe un insulto y hay que penar al usuario)
                 serializer.validated_data['pena'] = pena
             else:
-                serializer.validated_data['status'] = 1
+                serializer.validated_data['status'] = 1 # Lo pasa a rechazado (no existe motivo para penalizarlo, no hay insulto)
             serializer.save()
             return Response({'msg':'Denuncia registrada'}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors , status=status.HTTP_400_BAD_REQUEST)
